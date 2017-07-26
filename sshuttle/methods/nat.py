@@ -101,7 +101,7 @@ class Method(BaseMethod):
             msg = e.output
             # If there are no entries this gives exit code of 1.
             pass
-        debug1(msg)
+        debug1(str(msg, "utf-8"))
 
     def restore_firewall(self, port, family, udp, user):
         # only ipv4 supported with NAT
