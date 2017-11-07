@@ -98,9 +98,11 @@ class Concat(Action):
 
 
 parser = ArgumentParser(
-    prog="sshuttle",
+    prog="sshuttle-telepresence",
     usage="%(prog)s [-l [ip:]port] [-r [user@]sshserver[:port]] <subnets...>",
     fromfile_prefix_chars="@"
+    description="Modified for Telepresence: " +
+    "https://github.com/datawire/telepresence/issues/247"
 )
 parser.add_argument(
     "subnets",
