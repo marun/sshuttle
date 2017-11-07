@@ -55,7 +55,7 @@ setup(
     scripts=['bin/sudoers-add'],
     entry_points={
         'console_scripts': [
-            'sshuttle = sshuttle.cmdline:main',
+            'sshuttle-telepresence = sshuttle.cmdline:main',
         ],
     },
     tests_require=[
